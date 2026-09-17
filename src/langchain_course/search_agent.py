@@ -5,6 +5,7 @@ from langchain_core.messages import HumanMessage
 from langchain_ollama import ChatOllama
 from langchain_tavily import TavilySearch
 from tavily import TavilyClient
+from schemas import AgentResponse
 import os
 
 load_dotenv()
@@ -29,7 +30,8 @@ llm = ChatOllama(
 tools = [TavilySearch()]
 agent = create_agent(
     llm,
-    tools=tools,    
+    tools=tools,
+    response_format=AgentResponse,    
 )
 
 def main():
