@@ -30,6 +30,7 @@ dependencies = [
     "nltk>=3.10.3",
     "openai>=3.13.0",
     "pillow>=12.3.0",
+    "pytest>=9.1.1",
     "python-dotenv>=1.2.3",
     "streamlit>=1.64.0",
     "streamlit-chat>=0.1.1",
